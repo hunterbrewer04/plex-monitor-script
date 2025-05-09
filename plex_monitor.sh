@@ -10,7 +10,7 @@ if [ -z "$PLEX_TOKEN" ]; then
 fi
 
 # API URL
-PLEX_API="http://127.0.0.1:32400/status/sessions?X-Plex-Token=$PLEX_TOKEN"
+PLEX_API="$PLEX_URL/status/sessions?X-Plex-Token=$PLEX_TOKEN"
 
 # Monitor Plex sessions
 while true; do
